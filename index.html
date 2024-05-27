@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book Marker </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/syle.CSS">
+
+</head>
+
+<body>
+
+
+    <section>
+
+        <div class="container">
+            <section class="BookMarkerHeader">
+                <div class="text-center my-5">
+                    <h1> Bookmarker </h1>
+                </div>
+            </section>
+            <section class="secondTitle ">
+                <div class="text-center my-5">
+                    <h2> <i class="fa-solid fa-bookmark"></i>
+                        Bookmark your favorite sites
+                        <i class="fa-solid fa-bookmark"></i>
+                    </h2>
+                </div>
+            </section>
+            <section class="dataInputs">
+                <div class="input_SiteName">
+                    <h3> <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name</h3>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="siteName" placeholder="name@example.com">
+                        <label for="siteName">BookMark Name</label>
+                    </div>
+                </div>
+                <div class="input_SiteURL">
+                    <h3><i class="fa-solid fa-link pe-2"></i>
+                        Site URL
+                    </h3>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="siteUrl" placeholder="name@example.com">
+                        <label for="siteUrl">Website URL</label>
+                    </div>
+                    <div class="text-center btn-line"> 
+                        <button id="displayData" onclick="addProduct()" type="button" class="btn btn-danger">Submit</button>
+                    </div>
+                </div>
+            </section>
+            <section class="Table-review my-3">
+                <table class="table text-center">
+                    <thead class="table-light">
+                      <tr>
+                        <td>Index</td>
+                        <td>Website Name</td>
+                        <td>Visit</td>
+                        <td>Delete</td>
+                      </tr>
+                    </thead>
+                    <tbody id="rowDisplay">
+                    </tbody>
+                  </table>
+            </section>
+        </div>
+
+    </section>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.JS"></script>
+
+</body>
+
+</html>

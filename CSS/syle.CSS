@@ -1,0 +1,116 @@
+body { 
+    background-color: #F7EBDD ; 
+}
+.BookMarkerHeader {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+.BookMarkerHeader h1 {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.BookMarkerHeader h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    left: 0;
+    bottom: 70px;
+    background-color: black;
+    transition: height 350ms;
+    z-index: -1;
+    position: absolute;
+    
+  }
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  transition: height 350ms;
+  z-index: -1;
+  
+}
+h1:hover::before {
+  height: 50%;
+}
+
+.secondTitle h2 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  background-image: linear-gradient(to right, #c27801, #fec260);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  margin-top: 40px;
+}
+.secondTitle h2::before {
+  content: ".";
+  position: absolute;
+  width: 100%;
+  height: 6%;
+  left: 0;
+  bottom: 50px;
+  background-color: black;
+  transition: height 350ms;
+  z-index: -1;
+  position: absolute;
+}
+.secondTitle h2::after {
+  content: ".";
+  position: absolute;
+  width: 50%;
+  height: 6%;
+  left: 25%;
+  bottom: 40px;
+  background-color: black;
+  transition: height 350ms;
+  z-index: -1;
+  position: absolute;
+}
+.dataInputs h3 { 
+position: relative;
+}
+.dataInputs h3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+
+h3:hover::before {
+    height: 50%;
+}
+.btn-line { 
+    position: relative ; 
+
+}
+.btn-line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+   top: 70px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+  .form-control:focus {
+    border-color: #fec260;
+    box-shadow: inset 0 1px 1px #fec260, 0 0 8px #fec260;
+  }
+  a { color: #198753;
+    text-decoration: none;
+  }
+  button:hover a{ color: white;
+    text-decoration: none;
+  }
